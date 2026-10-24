@@ -1,0 +1,282 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Shastika L, an aspiring web developer studying Information Technology.">
+  <meta name="theme-color" content="#fffaf4">
+  <title>Home | Shastika L</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Profile photo styling -->
+  <style>
+    .hero-visual {
+      position: relative;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      margin: 0 auto;
+      border: 6px solid #ffffff;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+    }
+
+    .hero-note {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .profile-photo {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Shastika L home">
+        Shastika<span>.</span>
+      </a>
+
+      <nav class="nav-links" data-nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button" type="button"
+          data-theme-toggle aria-label="Switch to dark theme"
+          title="Switch theme">☾</button>
+
+        <a class="btn" href="contact.html">
+          Let’s talk <span aria-hidden="true">↗</span>
+        </a>
+
+        <button class="menu-toggle" type="button"
+          data-menu-toggle aria-expanded="false"
+          aria-label="Open navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero section with your own profile photo -->
+    <section class="container hero">
+      <div class="hero-content">
+        <p class="eyebrow">
+          Student · Curious creator · Future developer
+        </p>
+
+        <h1>Hi, I’m <span class="accent">Shastika.</span></h1>
+
+        <p class="hero-copy">
+          I build thoughtful digital experiences and enjoy turning
+          ideas into useful, user-friendly projects.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn" href="projects.html">
+            View my projects <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="btn btn-outline" href="about.html">
+            More about me
+          </a>
+        </div>
+
+        <p class="muted" style="margin-top:20px">
+          Currently learning, experimenting, and building one project at a time.
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          class="profile-photo"
+          src="C:\Users\KGCAS\Downloads\Shastika-Portfolio-Website\shastika-portfolio\my-photo.jpg.jpeg"
+          alt="Profile photo of Shastika"
+          fetchpriority="high"
+        >
+
+       
+    </section>
+
+    <!-- Featured projects -->
+    <section class="container section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A few things I’ve worked on</p>
+          <h2>Featured projects</h2>
+          <p>Ideas, learning, and practical problem-solving.</p>
+        </div>
+
+        <a class="text-link" href="projects.html">
+          Explore all projects →
+        </a>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card"
+          data-project-card data-category="java web">
+          <div class="project-art peach">
+            <img src="images/complaint-system.svg"
+              alt="Illustration representing Digital Complaint Registration and Status Monitoring System"
+              loading="lazy">
+          </div>
+
+          <div class="project-body">
+            <p class="eyebrow">PROJECT 01</p>
+            <h3>Digital Complaint Registration and Status Monitoring System</h3>
+            <p>
+              A digital workflow for registering complaints, generating
+              a unique complaint ID, and monitoring progress as
+              administrators update the status.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JDBC</span>
+            </div>
+
+            <a class="text-link" href="contact.html">
+              Ask me about this project <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card"
+          data-project-card data-category="web design">
+          <div class="project-art mint">
+            <img src="images/route-wise.svg"
+              alt="Illustration representing Route Wise — Smart India Hackathon"
+              loading="lazy">
+          </div>
+
+          <div class="project-body">
+            <p class="eyebrow">PROJECT 02</p>
+            <h3>Route Wise — Smart India Hackathon</h3>
+            <p>
+              A smart route-planning concept that suggests efficient
+              routes by considering distance and travel time, helping
+              people plan trips with fewer delays.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Route planning</span>
+              <span class="tag">Problem solving</span>
+              <span class="tag">Hackathon</span>
+            </div>
+
+            <a class="text-link" href="contact.html">
+              Ask me about this project <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card"
+          data-project-card data-category="programming">
+          <div class="project-art blue">
+            <img src="images/book-system.svg"
+              alt="Illustration representing Book Management System"
+              loading="lazy">
+          </div>
+
+          <div class="project-body">
+            <p class="eyebrow">PROJECT 03</p>
+            <h3>Book Management System</h3>
+            <p>
+              A C programming project for managing book records.
+              Users can enter a Book ID to remove a selected record
+              and update the stored file.
+            </p>
+
+            <div class="tags">
+              <span class="tag">C</span>
+              <span class="tag">File handling</span>
+              <span class="tag">Record management</span>
+            </div>
+
+            <a class="text-link" href="contact.html">
+              Ask me about this project <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills strip -->
+    <section class="container">
+      <div class="skills-strip">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">AI</span>
+      </div>
+    </section>
+
+    <!-- Contact callout -->
+    <section class="container section">
+      <div class="callout">
+        <div>
+          <p class="eyebrow">Have an idea?</p>
+          <h2>Let’s make something useful.</h2>
+          <p>
+            I’m happy to connect, learn, and talk about projects and technology.
+          </p>
+        </div>
+
+        <a class="btn" href="contact.html">
+          Get in touch <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>
+        © <span data-year>2026</span> Shastika L.
+        Built with HTML, CSS &amp; JavaScript.
+      </span>
+
+      <div class="footer-links">
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="#main">Back to content ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" data-back-top
+    type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+```
